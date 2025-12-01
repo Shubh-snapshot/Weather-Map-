@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the weather application -->
+    <div class="card">
+        <!-- Search input field and button -->
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+            <button>
+                <!-- Search button with icon -->
+                <img src="images/search.png" alt="Search">
+            </button>
+        </div>
+        
+        <!-- Error message for invalid city names -->
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        
+        <!-- Weather information container -->
+        <div class="weather">
+            <!-- Weather icon -->
+            <img src="images/rain.png" class="weather-icon" alt="Weather Icon">
+            
+            <!-- Temperature and city name -->
+            <h1 class="temp">8°C</h1>
+            <h2 class="city">Pune</h2>
+            
+            <!-- Additional weather details -->
+            <div class="details">
+                <!-- Humidity information -->
+                <div class="col">
+                    <img src="images/humidity.png" alt="Humidity">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <!-- Wind speed information -->
+                <div class="col">
+                    <img src="images/wind.png" alt="Wind">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
